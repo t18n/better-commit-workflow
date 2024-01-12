@@ -1,10 +1,10 @@
 # Better Commit Workflow
 
 A project to show how to set up:
+- Commitlint check on Pull Request
 - Commitlint with dynamic scope
 - Auto-generated changelog
 - Auto-generated version bump on `main` merge, generate tag and push a new tag to Github
-- Commitlint check on Pull Request
 
 ## Test commit messages
 
