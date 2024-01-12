@@ -17,14 +17,14 @@ module.exports = {
   plugins: [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    // "@semantic-release/changelog",
+    "@semantic-release/changelog",
     "@semantic-release/git",
     // "@semantic-release/github",
     // "@semantic-release/npm",
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "set-version ${nextRelease.version}",
+        "prepareCmd": "npm version ${nextRelease.version}",
         "verifyReleaseCmd": "echo \"VERSION=${nextRelease.version}\" > RELEASE.env"
       }
     ],
