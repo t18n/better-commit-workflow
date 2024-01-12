@@ -14,14 +14,25 @@ jobs:
     environment: main
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
         with:
-          fetch-depth: 0
-          persist-credentials: false
-      - uses: actions/setup-node@v4
+          node-version: 20
+          registry-url: "https://registry.npmjs.org"
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
         with:
-          node-version: 18
+          version: 8
+          run_install: false
+
+      - name: Install dependencies
+        run: pnpm install
+
       - env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+        run: pnpm run release
