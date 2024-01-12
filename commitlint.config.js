@@ -4,7 +4,6 @@ module.exports = {
   extends: ["@commitlint/config-conventional"],
   rules: {
     "scope-enum": async (ctx) => [2, "always", commitScopes(ctx)],
-    'breaking-change': [2, 'always', 'BREAKING'],
     'wip-rule': [2, 'always'],
   },
   helpUrl: `
