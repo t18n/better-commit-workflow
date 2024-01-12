@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/t18n/better-commit-workflow/compare/v1.3.3...v1.3.4) (2024-01-12)
+
+
+### Bug Fixes
+
+* CI action for linting ([35ae28d](https://github.com/t18n/better-commit-workflow/commit/35ae28db8780d0a03279b21bf68b1ec62fd8f5ab))
+
 ## [1.3.3](https://github.com/t18n/better-commit-workflow/compare/v1.3.2...v1.3.3) (2024-01-12)
 
 
