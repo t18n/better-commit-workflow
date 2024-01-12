@@ -1,3 +1,16 @@
+## [1.3.3](https://github.com/t18n/better-commit-workflow/compare/v1.3.2...v1.3.3) (2024-01-12)
+
+
+### Code Refactoring
+
+* remove action ([529f191](https://github.com/t18n/better-commit-workflow/commit/529f19112ac41f93a76ccc021dba46e32730bde8))
+
+
+### BREAKING CHANGES
+
+* - test breaking change messages
+- another one
+
 ## [1.3.2](https://github.com/t18n/better-commit-workflow/compare/v1.3.1...v1.3.2) (2024-01-12)
 
 
