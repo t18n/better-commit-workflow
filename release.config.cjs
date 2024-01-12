@@ -15,6 +15,18 @@ module.exports = {
   debug: true,
   tagFormat: "v${version}",
   plugins: [
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "preset": "angular",
+        "releaseRules": [
+          { "type": "docs", "scope": "README", "release": "patch" },
+          { "type": "refactor", "scope": "core-*", "release": "minor" },
+          { "type": "refactor", "release": "patch" },
+          { "scope": "no-release", "release": "patch" }
+        ]
+      }
+    ],
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     [
