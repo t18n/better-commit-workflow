@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/t18n/better-commit-workflow/compare/v1.3.0...v1.3.1) (2024-01-12)
+
+
+### Bug Fixes
+
+* release config ([0ea88c4](https://github.com/t18n/better-commit-workflow/commit/0ea88c41c810bca5322f0636a9076a4f020f9f1d))
+
 # [1.3.0](https://github.com/t18n/better-commit-workflow/compare/v1.2.0...v1.3.0) (2024-01-12)
 
 
