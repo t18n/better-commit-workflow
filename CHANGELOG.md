@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/t18n/better-commit-workflow/compare/v1.2.0...v1.3.0) (2024-01-12)
+
+
+### Features
+
+* update docs ([e4a973f](https://github.com/t18n/better-commit-workflow/commit/e4a973f46e8a5fea86f9712f60a740d977638793))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
