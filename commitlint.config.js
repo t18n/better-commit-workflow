@@ -4,6 +4,8 @@ module.exports = {
   extends: ["@commitlint/config-conventional"],
   rules: {
     "scope-enum": async (ctx) => [2, "always", commitScopes(ctx)],
+    'breaking-change': [2, 'always', 'BREAKING'],
+    'wip-rule': [2, 'always'],
   },
   helpUrl: `
   Commit messages must follow conventional commit format:
@@ -14,4 +16,16 @@ module.exports = {
   * To bypass pre-commit hooks run 'git commit --no-verify'
   >>> Use "yarn commit" for interactive prompt. <<< 
   `,
+  plugins: [
+    {
+      rules: {
+        'wip-rule': ({ subject }) => {
+          if (subject && subject.startsWith('WIP')) {
+            return [false, 'Work In Progress (WIP) commits are not allowed'];
+          }
+          return [true];
+        }
+      }
+    }
+  ],
 };
