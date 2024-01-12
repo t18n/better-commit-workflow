@@ -20,12 +20,12 @@ module.exports = {
     "@semantic-release/changelog",
     "@semantic-release/git",
     // "@semantic-release/github",
-    // "@semantic-release/npm",
     [
-      "@semantic-release/exec",
+      "@semantic-release/npm",
       {
-        "prepareCmd": "npm version ${nextRelease.version}",
+        npmPublish: false,
+        tarballDir: false,
       }
-    ],
+    ]
   ]
 };
