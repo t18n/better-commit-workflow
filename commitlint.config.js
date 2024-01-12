@@ -19,7 +19,7 @@ module.exports = {
     {
       rules: {
         'wip-rule': ({ subject }) => {
-          if (subject && subject.startsWith('WIP')) {
+          if (subject && subject.includes('WIP') || subject.includes('wip')) {
             return [false, 'Work In Progress (WIP) commits are not allowed'];
           }
           return [true];
