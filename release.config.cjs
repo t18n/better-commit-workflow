@@ -2,9 +2,15 @@
  * @type {import('semantic-release').GlobalConfig}
  */
 module.exports = {
-  branches: ["main"],
-  plugins: [
-   "@semantic-release/changelog",
-   "@semantic-release/git",
-  ]
+  branches: [
+    {
+      name: "main",
+      prerelease: false,
+    },
+    {
+      name: "next",
+      prerelease: true,
+    },
+  ],
+  plugins: ["@semantic-release/changelog", "@semantic-release/git"],
 };
