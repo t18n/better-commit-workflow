@@ -25,7 +25,6 @@ module.exports = {
       "@semantic-release/exec",
       {
         "prepareCmd": "npm version ${nextRelease.version}",
-        "verifyReleaseCmd": "echo \"VERSION=${nextRelease.version}\" > RELEASE.env"
       }
     ],
   ]

@@ -10,7 +10,7 @@ A project to show how to set up:
 
 ### Correct
 ```
-echo "feat: this is a message" | pnpm commitlint
+echo "feat: this is a message" | pnpm commitlint"
 echo "feat(components--button): this is a message" | pnpm commitlint
 echo "feat(utils--math): update logic" | pnpm commitlint
 echo "feat(utils--math): add test" | pnpm commitlint
