@@ -24,6 +24,6 @@ module.exports = {
         npmPublish: false,
       }
     ],
-    "@semantic-release/git"
+    "@semantic-release/git" // Keep it after artifact generation
   ]
 };
