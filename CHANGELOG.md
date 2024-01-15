@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/t18n/better-commit-workflow/compare/v1.3.4...v1.4.0) (2024-01-15)
+
+
+### Features
+
+* **config:** update rules ([64b9fa8](https://github.com/t18n/better-commit-workflow/commit/64b9fa85aacc1ea1e4e725c2dc8990dfe30e87e0))
+
 ## [1.3.4](https://github.com/t18n/better-commit-workflow/compare/v1.3.3...v1.3.4) (2024-01-12)
 
 
