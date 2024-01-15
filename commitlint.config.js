@@ -1,15 +1,16 @@
 const { commitScopes } = require("./.config/commit-scopes");
 
 module.exports = {
+  // Docs: https://github.com/conventional-changelog/commitlint/blob/master/%40commitlint/config-conventional/README.md
   extends: ["@commitlint/config-conventional"],
   rules: {
     "scope-enum": async (ctx) => [2, "always", commitScopes(ctx)],
     "wip-rule": [2, "always"],
     "subject-case": [
-      2,
+      1,
       "always", 
-      ["sentence-case", "start-case", "pascal-case", "upper-case"]
-    ],
+      ['sentence-case', 'start-case', 'pascal-case', 'upper-case']
+    ]
   },
   helpUrl: `
   Commit messages must follow conventional commit format:
