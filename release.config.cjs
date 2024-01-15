@@ -35,6 +35,12 @@ module.exports = {
         npmPublish: false,
       }
     ],
-    "@semantic-release/git" // Keep it after artifact generation
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["package.json", "CHANGELOG.md"],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ] // Keep it after artifact generation
   ]
 };
